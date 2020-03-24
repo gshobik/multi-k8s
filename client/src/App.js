@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
+            <h1 className="App-title">Привет, Лешка</h1>
             <Link to="/">Home</Link>
             <Link to="/otherpage">Other Page</Link>
           </header>
@@ -20,6 +20,7 @@ class App extends Component {
             <Route exact path="/" component={Fib} />
             <Route path="/otherpage" component={OtherPage} />
           </div>
+          <p>Приложение считает числа фибоначчи до 40го. Когда ввел индекс надо обновить страничку(да, вот так работает приложение)</p>
         </div>
       </Router>
     );
